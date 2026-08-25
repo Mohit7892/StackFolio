@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StackFolio</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      h2 {
+        color: darkgreen;
+      }
+    </style>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 style="color: rgb(3, 3, 22); font-size: xx-large">StackFolio</h1>
+
+      <nav>
+        <a href="#About me">About me</a>
+        <a href="#Skills">Skills</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Contact">Contact</a>
+        <a href="www.linkedin.com" target="_blank" rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <section id="About me" class="section-card">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <img
+            src="MyPhoto.jpg"
+            alt="profile picture"
+            class="about-avatar"
+        />
+          <div class="about-text">
+            <p>
+              I am learning full stack development and building my foundations
+              step by step. I enjoy solving problems and turning ideas into real
+              projects using HTML, CSS, and JavaScript.
+            </p>
+            <p>
+              When I am not coding, I am exploring new tools, reading
+              documentation, and collaborating with other learners.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="Skills" class="section-card">
+        <h2>My Skill set</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>DSA</li>
+          <li>Java-LLD</li>
+          <li>Spring-Boot backend project</li>
+        </ul>
+      </section>
+
+      <h2>My Projects are listed here..</h2>
+      <section id="Projects" class="section-card">
+        <!-- <ol type="a">
+                <li>Backend Java Spring boot</li>
+                <li>FS MERN stack project</li>
+            </ol> -->
+        <article class="project-card">
+          <h3>Product catalog service</h3>
+          <span class="project-status">Completed</span>
+          <p>Spring boot project to manage products for a ecomm.</p>
+          <a href="#">Contact for this project</a>
+        </article>
+
+        <article class="project-card">
+          <h3>StackFolio</h3>
+          <span class="project-status">In-progress</span>
+          <p>A web site to show case my skills and projects.</p>
+          <a href="">Contact for this project</a>
+        </article>
+
+        <article class="project-card">
+          <h3>StackFolio</h3>
+          <span class="project-status">Yet to Start</span>
+          <p>Project with MERN stack.</p>
+          <a href="">Contact for this project</a>
+        </article>
+
+        <article class="project-card">
+          <h3>StackFolio</h3>
+          <span class="project-status">Yet to start</span>
+          <p>Project with java backend and JS frontend.</p>
+          <a href="">Contact for this project</a>
+        </article>
+
+        <article class="project-card">
+          <h3>StackFolio</h3>
+          <span class="project-status">Yet to start</span>
+          <p>Automation project with Playwright java.</p>
+          <a href="">Contact for this project</a>
+        </article>
+
+        <article class="project-card">
+          <h3>StackFolio</h3>
+          <span class="project-status">Yet to start</span>
+          <p>Automation project with Selenium Java.</p>
+          <a href="">Contact for this project</a>
+        </article>
+      </section>
+
+      <section id="Contact" class="section-card">
+        <h2>Contact me</h2>
+        <form>
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <label for="reason">Reason to contact</label>
+          <select id="reason" name="reason" required>
+            <option value="">Select the reason</option>
+            <option value="Nice HTML">HTML</option>
+            <option value="Nice CSS">CSS</option>
+            <option value="Nice JS">JS</option>
+          </select>
+          <label for="comments">Comments</label>
+          <textarea
+            id="comments"
+            name="comments"
+            rows="5"
+            minlength="5"
+            maxlength="300"
+          >
+          </textarea>
+          <fieldset>
+            <legend>Contact Method</legend>
+            <label for="emailRadio">Email</label>
+            <input
+              type="radio"
+              id="emailRadio"
+              name="contactMethod"
+              value="email"
+              checked
+            />
+            <label for="phoneRadio">Phone</label>
+            <input
+              type="radio"
+              id="phoneRadio"
+              name="contactMethod"
+              value="phone"
+            />
+          </fieldset>
+
+          <input type="checkbox" id="consent" name="consent" required />
+          <label for="consent">I agree to be contacted for this message</label>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <h3>This is all I have!!</h3>
+      <nav class="floating-contact">
+        <a href="#Contact">Contact</a>
+      </nav>
+    </footer>
+  </body>
+</html>

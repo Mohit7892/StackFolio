@@ -1,0 +1,208 @@
+
+:root{
+    --background-color-primary: white;
+    --color-primary: #2563eb;
+    --background-color-secondary : #674578;
+    --font-style-primary: bold;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* element selector */
+
+header{
+    /* position: sticky; */
+    /* top: 2px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+    background-color: var(--background-color-secondary);
+    color: var(--color-primary);
+}
+main{
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+p{
+    color: var(--color-primary);
+    line-height: 24px;
+    padding: 20px;
+    text-align: justify;
+    border:3px solid black;
+    margin: 20px;
+    background-color: var(--background-color-primary);
+    font-style: var(--font-type-primary);
+}
+
+body{
+    font-style: var(--font-style-primary);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* class selector */
+.section-card{
+    color: #44344f;
+}
+
+
+/* id selector */
+#Contact{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: rgb(65, 65, 56);
+}
+
+section {
+    color: brown;
+}
+
+h2,h3 {
+    color: blueviolet;
+    font-style: var(--font-style-primary);
+}
+
+header p {
+background-color: #5fe9f1;
+color: grey;
+font-size: x-large;
+font-family: 'Times New Roman', Times, serif;
+border-radius: 5px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    font-style: italic;
+    text-decoration:wavy;
+    color: blue;
+    /* display: inline-block; */
+    padding: 10px;
+    /* margin-right: 5px; */
+    border: 2px solid #12a2ff;
+    border-radius: 5px;
+    background-color: blue;
+    color: #ffffff;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;;
+}
+
+.about-avatar{
+border-radius: 50%;
+width: 250px;
+height: 250px;
+}
+
+form input{
+    font-size: x-large;
+    font-style: italic;
+    padding: 10px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+input, select, textarea, fieldset, button{
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+
+}
+
+fieldset > input, fieldset > label {
+    display: inline;
+    width: auto;
+}
+
+#consent {
+    display: inline;
+    width: auto;
+}
+
+button {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    width: auto;
+}
+
+#Skills > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+#Skills li {
+    /* display: inline-block; */
+    padding: 10px;
+    /* margin-right: 10px; */
+    border: 2px solid #23f589;
+    font-style: normal;
+    font-weight: bold;
+    background-color: #f2f6f1;
+    border-radius: 10px;
+    list-style: none;
+}
+
+#Projects .project-card{
+    border: 2px solid green;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: wheat;
+    border-radius: 10px;
+}
+
+.project-card{
+    position: relative;
+}
+.project-card > .project-status{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    padding: 4px;
+    border: 5px solid #f63489;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+
+footer nav.floating-contact > a {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    padding: 5px 10px;
+    border: 2px solid white;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+}
+
+#Projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: space-around;
+    align-content: center;
+}
